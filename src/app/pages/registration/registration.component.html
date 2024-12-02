@@ -2,32 +2,20 @@
 <form action="#" class="registration-form">
   <h1 class="registration-form__title">Login</h1>
 
-
   <label class="input-box">
-    <input type="text" placeholder="Username" required>
-  </label>
-
-
-  <label class="input-box">
-    <input type="email" placeholder="Email" required>
+    <input type="email" placeholder="Email" [(ngModel)]="email">
   </label>
 
   <label class="input-box">
-    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="Password" [(ngModel)]="password">
   </label>
-
-  <label class="input-box">
-    <input type="password" placeholder="Confirm your password" required>
-  </label>
-
-
 
 <!--  <button type="submit" class="btn-login">Registration</button>-->
 <!--  <span>Or</span>-->
 
 
     <div class="registration-buttons">
-      <button type="submit" class="btn-registration">Registration</button>
+      <button type="submit" class="btn-registration" (click) = 'registration()'>Registration</button>
       <span>or</span>
 
       <a href="https://www.google.ru/?hl=ru">

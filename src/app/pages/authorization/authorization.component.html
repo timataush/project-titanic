@@ -5,12 +5,12 @@
 
 
   <label class="input-box">
-    <input   type="text" placeholder="Email address" required>
+    <input   type="email" placeholder="Email address" [(ngModel)]="email">
   </label>
 
 
   <label class="input-box">
-    <input  type="password" placeholder="Password" required>
+    <input  type="password" placeholder="Password" [(ngModel)]="password" >
   </label>
 
   <div class="remember">
@@ -21,6 +21,6 @@
   <button type="submit" class="btn-login" (click)="login()" >Login</button>
 
   <div class="register-link">
-    <p>Don't have an account? <a href="#">Register</a></p>
+    <p>Don't have an account? <a href="/auth">Register</a></p>
   </div>
 </form>

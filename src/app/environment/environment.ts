@@ -1,6 +1,6 @@
 export const environment = {
   production : false,
-  firebaseConfig : {
+  firebase : {
     apiKey: "AIzaSyDNW42PEWHMnisDa027RAPxFxFPovAbZ-A",
     authDomain: "project-titanic-6259e.firebaseapp.com",
     projectId: "project-titanic-6259e",
