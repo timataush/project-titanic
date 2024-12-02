@@ -1,0 +1,38 @@
+
+<form action="#" class="registration-form">
+  <h1 class="registration-form__title">Login</h1>
+
+  <label class="input-box">
+    <input type="email" placeholder="Email" [(ngModel)]="email">
+  </label>
+
+  <label class="input-box">
+    <input type="password" placeholder="Password" [(ngModel)]="password">
+  </label>
+
+<!--  <button type="submit" class="btn-login">Registration</button>-->
+<!--  <span>Or</span>-->
+
+
+    <div class="registration-buttons">
+      <button type="submit" class="btn-registration" (click) = 'registration()'>Registration</button>
+      <span>or</span>
+
+      <a href="https://www.google.ru/?hl=ru">
+        <button type="submit" class="btn-registration">Google</button>
+      </a>
+
+      <a href="https://www.facebook.com/">
+        <button type="submit" class="btn-registration">Facebook</button>
+      </a>
+
+      <a href="https://twitter.com/?lang=ru">
+        <button type="submit" class="btn-registration">Twitter</button>
+      </a>
+
+      <a href="https://github.com/">
+        <button type="submit" class="btn-registration">GitHub</button>
+      </a>
+    </div>
+
+</form>

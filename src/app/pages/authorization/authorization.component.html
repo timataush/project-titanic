@@ -1,1 +1,26 @@
-<p>authorization works!</p>
+
+
+<form class="login-form"  >
+  <h1 class="login-form__title">Login</h1>
+
+
+  <label class="input-box">
+    <input   type="email" placeholder="Email address" [(ngModel)]="email">
+  </label>
+
+
+  <label class="input-box">
+    <input  type="password" placeholder="Password" [(ngModel)]="password" >
+  </label>
+
+  <div class="remember">
+    <label> <input type="checkbox">Remember me</label>
+    <a href="#">Forgot password?</a>
+  </div>
+
+  <button type="submit" class="btn-login" (click)="login()" >Login</button>
+
+  <div class="register-link">
+    <p>Don't have an account? <a href="/auth">Register</a></p>
+  </div>
+</form>
